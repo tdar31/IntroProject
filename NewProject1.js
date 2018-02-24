@@ -55,3 +55,33 @@ var todoList = {
     this.displayTodos ();
   }
 };
+
+var displayTodosButton = document.getElementByID('displayTodosButton');
+var toggleAllButton = doucment.getElementByID('toggleAllButton');
+console.log('displayTodosButton');
+
+displayTodosButton.addEventListener('click', function() {
+  todoList.displayTodos();
+});
+
+toggleAllButton.addEventListerner('click', function() {
+  todoList.toggleAll();
+});
+
+//Storing todos array on property 'todos' inside of todoList variable
+
+//for (var i = 0; i < 3; i++) { // i++ = i = i + 1 so common that is just knoow as that command
+//  console.log("hey");
+//}
+
+//------
+//var testArray = ['item 1','item 2', 'item 3'];
+//for (var i = 0; i < testArray.lenght; i++) {
+//  console.log(testArray[i]);
+//}
+
+
+// variable test array with 3 items
+//for loop that prints each item one at a time
+//it knows how many to print out total by using .lenght of the variable
+//lets you dyanmically change the length
